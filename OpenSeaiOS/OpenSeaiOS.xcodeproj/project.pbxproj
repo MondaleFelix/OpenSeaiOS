@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F204E6826AFB35900629A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F204E6726AFB35900629A5D /* AppDelegate.swift */; };
+		6F204E6A26AFB35900629A5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F204E6926AFB35900629A5D /* SceneDelegate.swift */; };
+		6F204E6F26AFB35900629A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F204E6D26AFB35900629A5D /* Main.storyboard */; };
+		6F204E7126AFB35B00629A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F204E7026AFB35B00629A5D /* Assets.xcassets */; };
+		6F204E7426AFB35B00629A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F204E7226AFB35B00629A5D /* LaunchScreen.storyboard */; };
+		6F204E7F26AFB35B00629A5D /* OpenSeaiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F204E7E26AFB35B00629A5D /* OpenSeaiOSTests.swift */; };
+		6F204E8A26AFB35B00629A5D /* OpenSeaiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F204E8926AFB35B00629A5D /* OpenSeaiOSUITests.swift */; };
+		6F4A09C526B132E900ECAC50 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4A09C426B132E900ECAC50 /* SearchVC.swift */; };
+		6F4A09CA26B1332A00ECAC50 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4A09C926B1332A00ECAC50 /* FavoritesListVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F204E7B26AFB35B00629A5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F204E5C26AFB35900629A5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F204E6326AFB35900629A5D;
+			remoteInfo = OpenSeaiOS;
+		};
+		6F204E8626AFB35B00629A5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F204E5C26AFB35900629A5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F204E6326AFB35900629A5D;
+			remoteInfo = OpenSeaiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F204E6426AFB35900629A5D /* OpenSeaiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSeaiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F204E6726AFB35900629A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F204E6926AFB35900629A5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6F204E6E26AFB35900629A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F204E7026AFB35B00629A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F204E7326AFB35B00629A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F204E7526AFB35B00629A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F204E7A26AFB35B00629A5D /* OpenSeaiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSeaiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F204E7E26AFB35B00629A5D /* OpenSeaiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaiOSTests.swift; sourceTree = "<group>"; };
+		6F204E8026AFB35B00629A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F204E8526AFB35B00629A5D /* OpenSeaiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSeaiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F204E8926AFB35B00629A5D /* OpenSeaiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaiOSUITests.swift; sourceTree = "<group>"; };
+		6F204E8B26AFB35B00629A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F4A09C426B132E900ECAC50 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		6F4A09C926B1332A00ECAC50 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F204E6126AFB35900629A5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F204E7726AFB35B00629A5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F204E8226AFB35B00629A5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F204E5B26AFB35900629A5D = {
+			isa = PBXGroup;
+			children = (
+				6F204E6626AFB35900629A5D /* OpenSeaiOS */,
+				6F204E7D26AFB35B00629A5D /* OpenSeaiOSTests */,
+				6F204E8826AFB35B00629A5D /* OpenSeaiOSUITests */,
+				6F204E6526AFB35900629A5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F204E6526AFB35900629A5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F204E6426AFB35900629A5D /* OpenSeaiOS.app */,
+				6F204E7A26AFB35B00629A5D /* OpenSeaiOSTests.xctest */,
+				6F204E8526AFB35B00629A5D /* OpenSeaiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F204E6626AFB35900629A5D /* OpenSeaiOS */ = {
+			isa = PBXGroup;
+			children = (
+				6F204E9D26AFB3E800629A5D /* Model */,
+				6F204E9E26AFB3EC00629A5D /* View */,
+				6F204E9F26AFB3F100629A5D /* Controller */,
+				6F204E6726AFB35900629A5D /* AppDelegate.swift */,
+				6F204E6926AFB35900629A5D /* SceneDelegate.swift */,
+				6F204E6D26AFB35900629A5D /* Main.storyboard */,
+				6F204E7026AFB35B00629A5D /* Assets.xcassets */,
+				6F204E7226AFB35B00629A5D /* LaunchScreen.storyboard */,
+				6F204E7526AFB35B00629A5D /* Info.plist */,
+			);
+			path = OpenSeaiOS;
+			sourceTree = "<group>";
+		};
+		6F204E7D26AFB35B00629A5D /* OpenSeaiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F204E7E26AFB35B00629A5D /* OpenSeaiOSTests.swift */,
+				6F204E8026AFB35B00629A5D /* Info.plist */,
+			);
+			path = OpenSeaiOSTests;
+			sourceTree = "<group>";
+		};
+		6F204E8826AFB35B00629A5D /* OpenSeaiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F204E8926AFB35B00629A5D /* OpenSeaiOSUITests.swift */,
+				6F204E8B26AFB35B00629A5D /* Info.plist */,
+			);
+			path = OpenSeaiOSUITests;
+			sourceTree = "<group>";
+		};
+		6F204E9D26AFB3E800629A5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F204E9E26AFB3EC00629A5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F204E9F26AFB3F100629A5D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F4A09C426B132E900ECAC50 /* SearchVC.swift */,
+				6F4A09C926B1332A00ECAC50 /* FavoritesListVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F204E6326AFB35900629A5D /* OpenSeaiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F204E8E26AFB35B00629A5D /* Build configuration list for PBXNativeTarget "OpenSeaiOS" */;
+			buildPhases = (
+				6F204E6026AFB35900629A5D /* Sources */,
+				6F204E6126AFB35900629A5D /* Frameworks */,
+				6F204E6226AFB35900629A5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenSeaiOS;
+			productName = OpenSeaiOS;
+			productReference = 6F204E6426AFB35900629A5D /* OpenSeaiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F204E7926AFB35B00629A5D /* OpenSeaiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F204E9126AFB35B00629A5D /* Build configuration list for PBXNativeTarget "OpenSeaiOSTests" */;
+			buildPhases = (
+				6F204E7626AFB35B00629A5D /* Sources */,
+				6F204E7726AFB35B00629A5D /* Frameworks */,
+				6F204E7826AFB35B00629A5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F204E7C26AFB35B00629A5D /* PBXTargetDependency */,
+			);
+			name = OpenSeaiOSTests;
+			productName = OpenSeaiOSTests;
+			productReference = 6F204E7A26AFB35B00629A5D /* OpenSeaiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F204E8426AFB35B00629A5D /* OpenSeaiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F204E9426AFB35B00629A5D /* Build configuration list for PBXNativeTarget "OpenSeaiOSUITests" */;
+			buildPhases = (
+				6F204E8126AFB35B00629A5D /* Sources */,
+				6F204E8226AFB35B00629A5D /* Frameworks */,
+				6F204E8326AFB35B00629A5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F204E8726AFB35B00629A5D /* PBXTargetDependency */,
+			);
+			name = OpenSeaiOSUITests;
+			productName = OpenSeaiOSUITests;
+			productReference = 6F204E8526AFB35B00629A5D /* OpenSeaiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F204E5C26AFB35900629A5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					6F204E6326AFB35900629A5D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					6F204E7926AFB35B00629A5D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 6F204E6326AFB35900629A5D;
+					};
+					6F204E8426AFB35B00629A5D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 6F204E6326AFB35900629A5D;
+					};
+				};
+			};
+			buildConfigurationList = 6F204E5F26AFB35900629A5D /* Build configuration list for PBXProject "OpenSeaiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F204E5B26AFB35900629A5D;
+			productRefGroup = 6F204E6526AFB35900629A5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F204E6326AFB35900629A5D /* OpenSeaiOS */,
+				6F204E7926AFB35B00629A5D /* OpenSeaiOSTests */,
+				6F204E8426AFB35B00629A5D /* OpenSeaiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F204E6226AFB35900629A5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F204E7426AFB35B00629A5D /* LaunchScreen.storyboard in Resources */,
+				6F204E7126AFB35B00629A5D /* Assets.xcassets in Resources */,
+				6F204E6F26AFB35900629A5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F204E7826AFB35B00629A5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F204E8326AFB35B00629A5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F204E6026AFB35900629A5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4A09CA26B1332A00ECAC50 /* FavoritesListVC.swift in Sources */,
+				6F4A09C526B132E900ECAC50 /* SearchVC.swift in Sources */,
+				6F204E6826AFB35900629A5D /* AppDelegate.swift in Sources */,
+				6F204E6A26AFB35900629A5D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F204E7626AFB35B00629A5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F204E7F26AFB35B00629A5D /* OpenSeaiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F204E8126AFB35B00629A5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F204E8A26AFB35B00629A5D /* OpenSeaiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F204E7C26AFB35B00629A5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F204E6326AFB35900629A5D /* OpenSeaiOS */;
+			targetProxy = 6F204E7B26AFB35B00629A5D /* PBXContainerItemProxy */;
+		};
+		6F204E8726AFB35B00629A5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F204E6326AFB35900629A5D /* OpenSeaiOS */;
+			targetProxy = 6F204E8626AFB35B00629A5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F204E6D26AFB35900629A5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F204E6E26AFB35900629A5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F204E7226AFB35B00629A5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F204E7326AFB35B00629A5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F204E8C26AFB35B00629A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F204E8D26AFB35B00629A5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F204E8F26AFB35B00629A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5VV3L44SL;
+				INFOPLIST_FILE = OpenSeaiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpenSeaiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F204E9026AFB35B00629A5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5VV3L44SL;
+				INFOPLIST_FILE = OpenSeaiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpenSeaiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F204E9226AFB35B00629A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenSeaiOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpenSeaiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSeaiOS.app/OpenSeaiOS";
+			};
+			name = Debug;
+		};
+		6F204E9326AFB35B00629A5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenSeaiOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpenSeaiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSeaiOS.app/OpenSeaiOS";
+			};
+			name = Release;
+		};
+		6F204E9526AFB35B00629A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenSeaiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpenSeaiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenSeaiOS;
+			};
+			name = Debug;
+		};
+		6F204E9626AFB35B00629A5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenSeaiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpenSeaiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenSeaiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F204E5F26AFB35900629A5D /* Build configuration list for PBXProject "OpenSeaiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F204E8C26AFB35B00629A5D /* Debug */,
+				6F204E8D26AFB35B00629A5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F204E8E26AFB35B00629A5D /* Build configuration list for PBXNativeTarget "OpenSeaiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F204E8F26AFB35B00629A5D /* Debug */,
+				6F204E9026AFB35B00629A5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F204E9126AFB35B00629A5D /* Build configuration list for PBXNativeTarget "OpenSeaiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F204E9226AFB35B00629A5D /* Debug */,
+				6F204E9326AFB35B00629A5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F204E9426AFB35B00629A5D /* Build configuration list for PBXNativeTarget "OpenSeaiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F204E9526AFB35B00629A5D /* Debug */,
+				6F204E9626AFB35B00629A5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F204E5C26AFB35900629A5D /* Project object */;
+}
