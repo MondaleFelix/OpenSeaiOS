@@ -16,6 +16,8 @@
 		6F204E8A26AFB35B00629A5D /* OpenSeaiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F204E8926AFB35B00629A5D /* OpenSeaiOSUITests.swift */; };
 		6F4A09C526B132E900ECAC50 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4A09C426B132E900ECAC50 /* SearchVC.swift */; };
 		6F4A09CA26B1332A00ECAC50 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4A09C926B1332A00ECAC50 /* FavoritesListVC.swift */; };
+		6F4A09CF26B1358900ECAC50 /* OSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4A09CE26B1358900ECAC50 /* OSButton.swift */; };
+		6F4A09D426B2583E00ECAC50 /* OSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4A09D326B2583D00ECAC50 /* OSTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		6F204E8B26AFB35B00629A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F4A09C426B132E900ECAC50 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		6F4A09C926B1332A00ECAC50 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		6F4A09CE26B1358900ECAC50 /* OSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSButton.swift; sourceTree = "<group>"; };
+		6F4A09D326B2583D00ECAC50 /* OSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 		6F204E9E26AFB3EC00629A5D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6F4A09CE26B1358900ECAC50 /* OSButton.swift */,
+				6F4A09D326B2583D00ECAC50 /* OSTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,8 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F4A09CA26B1332A00ECAC50 /* FavoritesListVC.swift in Sources */,
+				6F4A09D426B2583E00ECAC50 /* OSTextField.swift in Sources */,
 				6F4A09C526B132E900ECAC50 /* SearchVC.swift in Sources */,
 				6F204E6826AFB35900629A5D /* AppDelegate.swift in Sources */,
+				6F4A09CF26B1358900ECAC50 /* OSButton.swift in Sources */,
 				6F204E6A26AFB35900629A5D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
