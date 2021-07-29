@@ -21,6 +21,8 @@ class SearchVC: UIViewController {
         configureLogoImageView()
         configureTextField()
         configureNFTButton()
+        
+        createDimissKeyboardTapGesture()
     }
     
     
@@ -28,6 +30,19 @@ class SearchVC: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
     }
+    
+    func createDimissKeyboardTapGesture(){
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+    }
+    
+    
+    @objc func pushNFTListVC(){
+        let userNFTListVC = NFTListVC()
+        userNFTListVC.title = walletAddressTF.text
+        navigationController?.pushViewController(userNFTListVC, animated: true)
+    }
+    
     
     func configureLogoImageView(){
         view.addSubview(logoImageView)
@@ -45,7 +60,7 @@ class SearchVC: UIViewController {
     
     func configureTextField(){
         view.addSubview(walletAddressTF)
-        
+        walletAddressTF.delegate = self
         NSLayoutConstraint.activate([
             walletAddressTF.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
             walletAddressTF.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
@@ -57,6 +72,8 @@ class SearchVC: UIViewController {
     func configureNFTButton(){
         view.addSubview(getNFTButton)
         
+        getNFTButton.addTarget(self, action: #selector(pushNFTListVC), for: .touchUpInside)
+        
         NSLayoutConstraint.activate([
             getNFTButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
             getNFTButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
@@ -66,4 +83,12 @@ class SearchVC: UIViewController {
         ])
     }
 
+}
+
+extension SearchVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pushNFTListVC()
+        return true
+    }
+    
 }

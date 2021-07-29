@@ -35,5 +35,6 @@ class OSTextField: UITextField {
         backgroundColor = .tertiarySystemBackground
         autocorrectionType = .no
         placeholder = "Enter Wallet Address"
+        returnKeyType = .go
     }
 }
