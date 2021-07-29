@@ -11,6 +11,9 @@ class TokenVC: UIViewController {
 
     let tokenImageView = UIImageView()
     var tokenImageUrl: String = ""
+    var tokenAddressLabel = UILabel()
+    var tokenContractLabel = UILabel()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +21,9 @@ class TokenVC: UIViewController {
         
         configureTokenImageView()
         downloadImage(from: tokenImageUrl)
+        configureTokenAddressLabel()
+        configureTokenContractLabel()
+        
     }
     
     func downloadImage(from urlString: String?){
@@ -56,12 +62,43 @@ class TokenVC: UIViewController {
         tokenImageView.image = UIImage(named: "opensea")
 
         NSLayoutConstraint.activate([
-            tokenImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
+            tokenImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             tokenImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             tokenImageView.heightAnchor.constraint(equalToConstant: 200),
             tokenImageView.widthAnchor.constraint(equalToConstant: 200)
         ])
     }
+    
+    func configureTokenAddressLabel(){
+        view.addSubview(tokenAddressLabel)
+        tokenAddressLabel.translatesAutoresizingMaskIntoConstraints = false
+        tokenAddressLabel.adjustsFontSizeToFitWidth = true
+        
+        NSLayoutConstraint.activate([
+        
+            tokenAddressLabel.topAnchor.constraint(equalTo: tokenImageView.bottomAnchor, constant: 20),
+            tokenAddressLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            tokenAddressLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            tokenAddressLabel.heightAnchor.constraint(equalToConstant: 50)
+        
+        ])
+    }
+    
+    func configureTokenContractLabel(){
+        view.addSubview(tokenContractLabel)
+        tokenContractLabel.translatesAutoresizingMaskIntoConstraints = false
+        tokenContractLabel.adjustsFontSizeToFitWidth = true
+        NSLayoutConstraint.activate([
+        
+            tokenContractLabel.topAnchor.constraint(equalTo: tokenAddressLabel.bottomAnchor, constant: 20),
+            tokenContractLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            tokenContractLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            tokenContractLabel.heightAnchor.constraint(equalToConstant: 50)
+        
+        ])
+    }
+
+
 
 
 }

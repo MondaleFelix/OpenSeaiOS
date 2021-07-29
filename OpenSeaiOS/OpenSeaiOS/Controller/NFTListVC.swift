@@ -18,6 +18,7 @@ class NFTListVC: UIViewController {
         view.backgroundColor = .systemBackground
         navigationController?.isNavigationBarHidden = false
         navigationController?.navigationBar.prefersLargeTitles = true
+        
         configureTableView()
         getTokens()
     }
@@ -51,6 +52,8 @@ class NFTListVC: UIViewController {
 
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
+                    self.title = self.tokens[0].owner.user.username
+
                 }
                 
             case .failure(let error):
@@ -68,6 +71,8 @@ extension NFTListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let token = self.tokens[indexPath.row]
         let tokenVC = TokenVC()
+        tokenVC.tokenAddressLabel.text = token.asset_contract.address
+        tokenVC.tokenContractLabel.text = token.asset_contract.asset_contract_type
         tokenVC.tokenImageUrl = token.image_url
         navigationController?.pushViewController(tokenVC, animated: true)
     }
