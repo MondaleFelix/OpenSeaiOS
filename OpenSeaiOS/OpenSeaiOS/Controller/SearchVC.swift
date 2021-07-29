@@ -14,6 +14,10 @@ class SearchVC: UIViewController {
     let walletAddressTF = OSTextField()
     let getNFTButton = OSButton(backgroundColor: .systemBlue, title: "Get NFTs")
     
+    var isAddressEntered: Bool {
+        return walletAddressTF.text!.isEmpty
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -38,7 +42,10 @@ class SearchVC: UIViewController {
     
     
     @objc func pushNFTListVC(){
+        
+        
         let userNFTListVC = NFTListVC()
+        userNFTListVC.owner = walletAddressTF.text!
         userNFTListVC.title = walletAddressTF.text
         navigationController?.pushViewController(userNFTListVC, animated: true)
     }
