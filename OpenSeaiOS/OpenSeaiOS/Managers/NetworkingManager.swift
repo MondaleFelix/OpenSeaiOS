@@ -19,6 +19,7 @@ class NetworkManager {
     let baseURL = "https://api.opensea.io/api/v1/assets"
     
     
+    
     func getTokens(for owner: String, completed: @escaping(Result<[Token], ErrorMessage>) -> Void){
         
         let endpoint = baseURL + "?owner=\(owner)&order_direction=desc&offset=0&limit=20"

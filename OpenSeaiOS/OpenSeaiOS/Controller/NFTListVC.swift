@@ -65,7 +65,12 @@ class NFTListVC: UIViewController {
 }
 
 extension NFTListVC: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let token = self.tokens[indexPath.row]
+        let tokenVC = TokenVC()
+        tokenVC.tokenImageUrl = token.image_url
+        navigationController?.pushViewController(tokenVC, animated: true)
+    }
 }
 
 extension NFTListVC: UITableViewDataSource {
@@ -79,7 +84,7 @@ extension NFTListVC: UITableViewDataSource {
         cell.tokenTitleLabel.text = token.name
 
         
-//        cell.downloadImage(from: token.image_url)
+        cell.downloadImage(from: token.image_url)
         
         
         return cell
